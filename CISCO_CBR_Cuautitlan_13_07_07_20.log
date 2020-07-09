@@ -1,0 +1,1218 @@
+﻿CISCO_CBR_Cuautitlan_13#
+CISCO_CBR_Cuautitlan_13#
+CISCO_CBR_Cuautitlan_13#twrminal leng 0
+                         ^
+% Invalid input detected at '^' marker.
+
+CISCO_CBR_Cuautitlan_13#terminal leng 0
+CISCO_CBR_Cuautitlan_13#show clo
+CISCO_CBR_Cuautitlan_13#show clock 
+*10:57:47.574 EST Tue Jul 7 2020
+CISCO_CBR_Cuautitlan_13#sho pla
+CISCO_CBR_Cuautitlan_13#sho platform 
+Chassis type: CBR-8-CCAP-CHASS
+
+Slot      Type                State                 Insert time (ago) 
+--------- ------------------- --------------------- ----------------- 
+0         CBR-CCAP-LC-40G     ok                    10:35:40      
+0/1       CBR-RF-PROT-PIC     ok                    10:32:17      
+1         CBR-CCAP-LC-40G     ok                    10:35:40      
+1/1       CBR-RF-PIC          ok                    10:32:15      
+2         CBR-CCAP-LC-40G     ok                    10:35:40      
+2/1       CBR-RF-PIC          ok                    10:32:14      
+3         CBR-CCAP-LC-40G     ok                    10:35:40      
+3/1       CBR-RF-PIC          ok                    10:32:12      
+6         CBR-CCAP-LC-40G     ok                    10:35:40      
+6/1       CBR-RF-PIC          ok                    10:32:10      
+7         CBR-CCAP-LC-40G     ok                    10:35:40      
+7/1       CBR-RF-PIC          ok                    10:32:09      
+8         CBR-CCAP-LC-40G     ok                    10:35:40      
+8/1       CBR-RF-PIC          ok                    10:32:08      
+9         CBR-CCAP-LC-40G     ok                    10:35:40      
+9/1       CBR-RF-PIC          ok                    10:32:06      
+SUP0      CBR-CCAP-SUP-60G    inserted              10:35:40      
+ R0                           ok, active            
+ F0                           ok, active            
+ 4                            ok, active            
+ 4/1      CBR-SUP-8X10G-PIC   ok                    10:32:05      
+SUP1      CBR-CCAP-SUP-60G    inserted              10:35:37      
+ R1                           ok, standby           
+ F1                           ok, standby           
+ 5                            ok, standby           
+ 5/1      CBR-SUP-8X10G-PIC   ok                    10:32:04      
+P0        CBR-DC-PS           ok                    10:32:15      
+P1        CBR-DC-PS           ok                    10:32:15      
+P2        CBR-DC-PS           ok                    10:32:15      
+P3        CBR-DC-PS           ok                    10:32:15      
+P4        CBR-DC-PS           ok                    10:32:15      
+P5        Unknown             N/A                   never         
+P10       CBR-FAN-ASSEMBLY    ok                    10:32:05      
+P11       CBR-FAN-ASSEMBLY    ok                    10:32:05      
+P12       CBR-FAN-ASSEMBLY    ok                    10:32:05      
+P13       CBR-FAN-ASSEMBLY    ok                    10:32:05      
+P14       CBR-FAN-ASSEMBLY    ok                    10:32:05      
+
+Slot      CPLD Version        Rommon Version                          
+--------- ------------------- --------------------------------------- 
+0         00000026            2011.03.18                          
+1         00000026            2011.03.18                          
+2         00000026            2011.03.18                          
+3         00000026            2011.03.18                          
+6         00000026            2011.03.18                          
+7         00000026            2011.03.18                          
+8         00000026            2011.03.18                          
+9         00000026            2011.03.18                          
+SUP0      16052011            16.7(6r)S                           
+SUP1      16052011            16.7(6r)S                           
+
+CISCO_CBR_Cuautitlan_13#show redun
+CISCO_CBR_Cuautitlan_13#show redundancy 
+Redundant System Information :
+------------------------------
+       Available system uptime = 10 hours, 32 minutes
+Switchovers system experienced = 0
+              Standby failures = 1
+        Last switchover reason = none
+
+                 Hardware Mode = Duplex
+    Configured Redundancy Mode = sso
+     Operating Redundancy Mode = sso
+              Maintenance Mode = Disabled
+                Communications = Up
+
+Current Processor Information :
+-------------------------------
+               Active Location = slot 4
+        Current Software state = ACTIVE
+       Uptime in current state = 10 hours, 32 minutes
+                 Image Version = Cisco IOS Software [Gibraltar], cBR  Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.12.1z, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 11-Jun-20 12:32 by mcpre
+                          BOOT = bootflash:cbrsup-universalk9.16.12.01z.SPA.bin,12;
+                   CONFIG_FILE = 
+        Configuration register = 0x2102
+
+Peer Processor Information :
+----------------------------
+              Standby Location = slot 5
+        Current Software state = STANDBY HOT 
+       Uptime in current state = 10 hours, 10 minutes
+                 Image Version = Cisco IOS Software [Gibraltar], cBR  Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.12.1z, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 11-Jun-20 12:32 by mcpre
+                          BOOT = bootflash:cbrsup-universalk9.16.12.01z.SPA.bin,12;
+                   CONFIG_FILE = 
+        Configuration register = 0x2102
+
+
+CISCO_CBR_Cuautitlan_13#show redun
+CISCO_CBR_Cuautitlan_13#show redundancy lin
+CISCO_CBR_Cuautitlan_13#show redundancy linecard all
+              LC     My         Peer       Peer     Peer                       
+Slot Subslot  Group  State      State      Slot     Subslot  Role     Mode     
+-------------------------------------------------------------------------------
+ 9   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 1   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 2   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 3   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 6   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 7   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 8   -        0      Active     Stdby Warm 0        -        Active   Primary  
+ 0   -        0      -          -          Multiple None     Standby  Secondary
+CISCO_CBR_Cuautitlan_13#
+CISCO_CBR_Cuautitlan_13#
+CISCO_CBR_Cuautitlan_13#show log | i Jul  7
+*Jul  7 07:38:40.313: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+CLC 0/0: Jul  7 07:38:52.816: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 07:38:52.819: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 07:38:52.816: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 07:38:52.819: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 07:38:52.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 07:38:52.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 07:38:52.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 07:38:52.819: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 07:38:52.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 07:38:52.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 07:38:52.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 07:38:52.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 07:38:52.818: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 07:38:52.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 07:38:52.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 07:38:52.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 07:39:06.935: %SYS-6-LOGOUT: User hugramir has exited tty session 3(100.64.93.2)
+*Jul  7 07:43:42.836: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 07:43:42.893: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 07:44:12.478: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 07:44:42.725: %SSH-4-SSH2_UNEXPECTED_MSG: Unexpected message type has arrived. Terminating the connection from 100.64.93.2
+*Jul  7 07:45:34.269: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 4 (10.147.77.207)), user Rgarcia
+*Jul  7 07:45:34.270: %SYS-6-LOGOUT: User Rgarcia has exited tty session 4(10.147.77.207)
+*Jul  7 07:45:46.657: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: oscsalga] [Source: 100.64.93.5] [localport: 22] at 01:45:46 EST Tue Jul 7 2020
+*Jul  7 07:50:09.507: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:50:09.560: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:50:44.978: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:52:05.618: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:52:05.665: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:52:15.834: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 07:55:46.869: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 3 (100.64.93.5)), user oscsalga
+*Jul  7 07:55:46.870: %SYS-6-LOGOUT: User oscsalga has exited tty session 3(100.64.93.5)
+*Jul  7 08:04:34.693: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:04:34.749: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:04:51.152: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:08:42.522: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:08:42.583: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:09:22.997: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:10:20.548: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:10:20.594: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:10:53.759: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:11:54.267: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:12:38.943: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:12:38.996: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:13:25.049: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:21:11.703: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:21:11.745: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:21:58.327: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:22:32.959: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:22:33.019: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:22:58.863: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:23:29.176: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:24:26.107: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 2 (10.147.77.207)), user Rgarcia
+*Jul  7 08:24:26.107: %SYS-6-LOGOUT: User Rgarcia has exited tty session 2(10.147.77.207)
+*Jul  7 08:24:38.507: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 08:24:38.548: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 08:24:59.944: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 08:30:57.384: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: Rgarcia] [Source: 10.147.77.207] [localport: 22] at 02:30:57 EST Tue Jul 7 2020
+*Jul  7 08:31:12.306: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:31:12.347: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:33:22.167: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:33:22.215: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+CLC 1/0: Jul  7 08:47:15.703: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 08:47:15.705: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 08:47:15.702: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 08:47:15.705: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 08:47:15.702: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 08:47:15.705: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 08:47:15.704: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 08:47:15.706: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 08:47:15.703: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 08:47:15.705: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 08:47:15.703: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 08:47:15.706: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 08:47:15.704: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 08:47:15.706: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 08:47:15.703: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 08:47:15.706: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 08:50:00.405: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: Rgarcia] [Source: 100.64.93.3] [localport: 22] at 02:50:00 EST Tue Jul 7 2020
+*Jul  7 08:50:00.919: %PARSER-5-HIDDEN: Warning!!! ' quit ' is a hidden command. Use of this command is not recommended/supported and will be removed in future.
+*Jul  7 08:50:00.919: %SYS-6-LOGOUT: User Rgarcia has exited tty session 2(10.147.77.207)
+*Jul  7 08:50:22.689: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:50:22.725: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+CLC 1/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 08:50:24.022: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 08:50:24.022: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 08:50:24.027: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 08:50:24.025: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 08:50:24.023: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 08:50:24.026: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 08:50:39.990: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 08:50:41.482: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: Rgarcia] [Source: 100.64.93.3] [localport: 22] at 02:50:41 EST Tue Jul 7 2020
+*Jul  7 08:51:09.051: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 08:51:09.090: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 08:51:40.522: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 08:52:08.812: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: Rgarcia] [Source: 100.64.93.3] [localport: 22] at 02:52:08 EST Tue Jul 7 2020
+*Jul  7 08:52:43.871: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:52:43.927: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:53:11.369: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:55:20.533: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:55:20.587: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:55:42.579: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:59:22.348: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:59:22.392: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty4
+*Jul  7 08:59:38.629: %PARSER-5-HIDDEN: Warning!!! ' quit ' is a hidden command. Use of this command is not recommended/supported and will be removed in future.
+*Jul  7 08:59:38.629: %SYS-6-LOGOUT: User Rgarcia has exited tty session 2(100.64.93.3)
+*Jul  7 09:00:27.755: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:00:27.800: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:00:44.523: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:02:09.863: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 4 (100.64.93.3)), user Rgarcia
+*Jul  7 09:02:09.864: %SYS-6-LOGOUT: User Rgarcia has exited tty session 4(100.64.93.3)
+*Jul  7 09:02:19.055: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: Rgarcia] [Source: 100.64.93.3] [localport: 22] at 03:02:19 EST Tue Jul 7 2020
+*Jul  7 09:05:41.350: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:05:41.388: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:06:16.746: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:06:47.070: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:06:57.061: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:06:57.104: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:07:17.396: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 09:12:19.932: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 2 (100.64.93.3)), user Rgarcia
+*Jul  7 09:12:19.933: %SYS-6-LOGOUT: User Rgarcia has exited tty session 2(100.64.93.3)
+*Jul  7 09:12:35.253: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 09:12:35.298: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 09:13:19.718: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 09:14:20.246: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 09:15:09.482: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 3 (100.64.93.3)), user Rgarcia
+*Jul  7 09:15:09.482: %SYS-6-LOGOUT: User Rgarcia has exited tty session 3(100.64.93.3)
+*Jul  7 09:23:46.287: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:23:46.325: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:07.000: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:07.046: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:32.198: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:32.261: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:32.274: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:32.329: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:54.681: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:54.774: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:25:54.850: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:26:55.455: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:30:35.034: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:30:35.077: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:30:57.086: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:36:06.387: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:36:06.429: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:44:27.900: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:44:27.945: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:48:09.940: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:48:09.991: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:48:33.672: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:49:15.653: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:49:15.697: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:49:21.659: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:49:21.708: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:49:34.172: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:50:04.496: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:53:28.406: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:53:28.460: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:54:06.252: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:56:44.772: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:56:44.814: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:57:07.451: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:57:07.527: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:59:51.719: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 09:59:51.766: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:00:16.087: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:00:16.150: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:00:38.897: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:00:38.994: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:01:00.725: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:01:00.784: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:01:09.299: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:01:39.626: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:02:23.070: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:02:23.107: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:02:40.221: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:03:22.196: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:03:22.255: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:03:40.751: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:03:48.876: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:03:48.918: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:05:18.332: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:05:18.382: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:06:20.279: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:06:20.329: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:06:41.980: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:10:30.286: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:10:30.345: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:10:43.598: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:13:29.289: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:13:29.328: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:13:44.819: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:16:42.524: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:16:42.572: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:17:16.298: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:17:26.602: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:17:26.641: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:17:46.581: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:18:22.077: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:18:22.129: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:18:47.248: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:20:18.074: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:20:18.129: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:20:48.148: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:27:08.200: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 100.64.93.1] [localport: 22] at 04:27:08 EST Tue Jul 7 2020
+*Jul  7 10:33:25.177: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 100.64.93.1] [localport: 22] at 04:33:25 EST Tue Jul 7 2020
+CLC 0/0: Jul  7 10:33:45.814: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 10:33:45.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 10:33:45.814: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 10:33:45.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 10:33:45.814: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 10:33:45.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 10:33:45.815: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 10:33:45.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 10:33:45.814: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 10:33:45.817: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 10:33:45.815: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 10:33:45.818: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 10:33:45.815: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 10:33:45.818: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 10:33:45.820: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 10:33:45.821: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 10:35:16.686: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 100.64.93.1] [localport: 22] at 04:35:16 EST Tue Jul 7 2020
+*Jul  7 10:36:27.308: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 100.64.93.1] [localport: 22] at 04:36:27 EST Tue Jul 7 2020
+*Jul  7 10:37:27.916: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: cisco] [Source: 100.64.93.1] [localport: 22] at 04:37:27 EST Tue Jul 7 2020
+*Jul  7 10:37:46.945: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 100.64.93.1] [localport: 22] at 04:37:46 EST Tue Jul 7 2020
+*Jul  7 10:37:50.883: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 10:37:50.943: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 10:38:24.882: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 10:44:54.566: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 2 (100.64.93.1)), user evelazquez
+*Jul  7 10:44:54.567: %SYS-6-LOGOUT: User evelazquez has exited tty session 2(100.64.93.1)
+*Jul  7 10:46:08.958: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:46:09.016: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:46:58.232: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:28.227: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:28.262: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:35.140: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:35.222: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:58.698: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:47:58.791: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 1/0: Jul  7 10:48:40.949: %CBR-4-DSX_MSG_ERROR: CM MAC: 704f.b825.9c49 MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+*Jul  7 10:53:15.723: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:53:15.759: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:54:07.088: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:54:07.144: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:54:31.481: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:55:53.041: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:55:53.089: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:56:32.350: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:57:18.541: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:57:18.601: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 10:57:32.849: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:00:03.866: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:00:41.777: %CBR-6-PKTCBL_COPS_CONNECTION_DOWN: Cops connection: IP addr: 10.3.1.150 Handle: 0x7F67323DC670 went down, Error code: 7
+*Jul  7 11:00:45.429: %CBR-6-PKTCBL_COPS_CONNECTION_UP: Cops connection: IP addr: 10.3.1.150 Handle: 0x7F673AE15890 is up
+*Jul  7 11:01:15.076: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:15.150: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:34.584: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:40.359: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:40.447: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:51.624: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:51.675: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:55.459: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:01:55.526: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:04.849: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:04.925: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:35.282: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:35.572: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:35.602: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:35.620: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:02:35.679: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:05.634: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:05.682: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:05.769: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:36.085: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:46.326: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:03:46.370: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 1/0: Jul  7 11:05:42.690: %CBR-4-DSX_MSG_ERROR: CM MAC: 5823.8cba.9ce2 MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+*Jul  7 11:09:05.617: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:09:05.667: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:09:38.538: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:12:14.652: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:12:14.696: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:12:39.867: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:13:50.301: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:13:50.354: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:14:10.592: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:29:51.959: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:29:52.017: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:30:47.036: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:30:47.082: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:31:17.123: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:33:48.852: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:33:48.903: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:34:18.356: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:34:18.398: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:34:48.536: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:36:19.259: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:36:39.250: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:36:39.288: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:37:19.754: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:37:36.023: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:37:36.084: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:37:50.116: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:41:31.235: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:41:31.274: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:41:33.166: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:41:33.228: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:41:47.617: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: hugramir] [Source: 100.64.93.1] [localport: 22] at 05:41:47 EST Tue Jul 7 2020
+*Jul  7 11:41:51.852: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 11:41:51.940: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 11:42:09.045: %SYS-6-LOGOUT: User hugramir has exited tty session 2(100.64.93.1)
+*Jul  7 11:42:41.806: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:42:41.852: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:43:22.634: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:43:27.029: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:43:27.063: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:43:52.931: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:44:23.221: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:45:32.912: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:45:32.958: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:51:20.406: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:51:20.465: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:51:56.284: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:54:40.940: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:54:40.987: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:54:57.601: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:57:17.240: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:57:17.289: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:57:58.817: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 11:58:29.149: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:03:04.988: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:03:05.033: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:03:31.163: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:04:00.808: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:04:00.859: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:04:31.665: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:06:21.368: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:06:21.428: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:06:32.502: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:06:51.892: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:06:51.937: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:07:33.063: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:08:03.338: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:13:39.302: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:13:39.355: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:13:46.631: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:13:46.665: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:14:05.815: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 8/0: Jul  7 12:17:09.665: %CBR-5-USMODCHANGE: UC8/0/14:U0 , dynamic modulation changed to 16-QAM
+CLC 8/0: Jul  7 12:17:25.774: %CBR-5-USMODCHANGE: UC8/0/14:U0 , dynamic modulation changed to 64-QAM
+*Jul  7 12:20:15.686: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: hugramir] [Source: 100.64.93.1] [localport: 22] at 06:20:15 EST Tue Jul 7 2020
+CLC 0/0: Jul  7 12:20:53.540: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:20:53.543: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:20:53.541: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:20:53.544: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:20:53.541: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:20:53.544: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:20:53.541: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:20:53.543: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:20:53.542: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:20:53.544: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:20:53.542: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:20:53.545: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:20:53.541: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:20:53.544: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:20:53.547: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:20:53.547: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:20:57.073: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:20:57.076: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:20:57.073: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:20:57.075: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:20:57.073: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:20:57.076: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:20:57.072: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:20:57.075: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:20:57.073: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:20:57.076: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:20:57.074: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:20:57.077: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:20:57.074: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:20:57.077: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:20:57.072: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:20:57.075: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:21:01.131: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:21:01.133: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:21:01.132: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:21:01.134: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:21:01.131: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:21:01.134: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:21:01.132: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:21:01.135: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:21:01.132: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:21:01.135: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:21:01.138: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:21:01.138: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:21:01.141: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:21:01.142: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:21:01.131: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:21:01.144: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:21:04.749: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:21:04.752: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:21:04.753: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:21:04.752: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:21:04.753: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:21:04.752: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:21:04.753: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:21:04.751: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:21:04.753: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:21:04.750: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:21:04.753: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 12:25:23.073: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 12:25:23.127: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 12:26:10.764: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+CLC 0/0: Jul  7 12:26:49.088: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 0/0: Jul  7 12:26:49.091: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:26:49.089: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 1/0: Jul  7 12:26:49.091: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:26:49.089: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 3/0: Jul  7 12:26:49.091: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:26:49.089: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 2/0: Jul  7 12:26:49.102: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:26:49.089: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 6/0: Jul  7 12:26:49.091: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:26:49.089: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 9/0: Jul  7 12:26:49.091: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:26:49.101: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 7/0: Jul  7 12:26:49.102: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:26:49.144: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+CLC 8/0: Jul  7 12:26:49.145: %SYS-5-CONFIG_P: Configured programmatically by process UBRCCE_CLI_XFER_PARSER from console as vty0
+*Jul  7 12:27:02.506: %SYS-6-LOGOUT: User hugramir has exited tty session 2(100.64.93.1)
+*Jul  7 12:28:04.553: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:28:04.607: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:28:42.143: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:30:05.820: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:30:05.864: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:32:21.701: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:32:21.751: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:32:43.852: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:33:42.357: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:33:42.413: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:34:14.573: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:35:17.802: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:35:17.838: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:35:45.407: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:36:14.288: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:36:14.324: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:36:53.451: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:36:53.506: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:37:16.103: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:40:17.385: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:41:02.030: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:41:02.072: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:41:52.506: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:41:52.553: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:42:18.200: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 7/0: Jul  7 12:43:13.018: %CBR-4-DSX_MSG_ERROR: CM MAC: d405.986f.4ea2 MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+CLC 1/0: Jul  7 12:43:16.376: %CBR-4-DSX_MSG_ERROR: CM MAC: 88f7.c736.5525 MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+CLC 3/0: Jul  7 12:43:59.167: %CBR-4-DSX_MSG_ERROR: CM MAC: 189c.2767.965a MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+*Jul  7 12:44:19.096: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:44:19.177: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:52:08.287: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:52:08.338: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:52:52.598: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:53:20.088: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:53:20.158: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:53:53.102: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:55:51.008: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:55:51.061: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:56:24.184: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:58:22.237: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:58:22.303: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:58:55.394: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:59:52.569: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 12:59:52.625: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:00:26.106: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 6/0: Jul  7 13:02:39.837: %CBR-4-DSX_MSG_ERROR: CM MAC: 9cc8.fc5a.f66f MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+*Jul  7 13:03:19.331: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:03:19.376: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:03:57.551: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+CLC 1/0: Jul  7 13:05:00.111: %CBR-4-DSX_MSG_ERROR: CM MAC: cc03.fa7f.65cf MSG type: TC_DOCSIS_RESERVE_QOS_REQ_CMTS, Error code: 0, MSG: .
+*Jul  7 13:06:01.617: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:06:01.676: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:06:28.648: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:07:10.548: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:07:10.593: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:07:29.162: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:02.492: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:02.544: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:11.511: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:11.563: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:30.103: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:09:30.302: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:10:00.604: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:10:59.509: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:10:59.570: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:11:31.281: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:43.538: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:43.589: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:45.800: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:45.846: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:48.522: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:14:48.578: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:15:02.837: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:15:02.897: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:15:33.183: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:15:46.236: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:15:46.273: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:17:14.517: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:17:14.566: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:17:34.324: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:18:04.632: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:19:25.468: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:19:25.509: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:21:09.351: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:21:09.398: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:21:36.195: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:24:36.344: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:24:36.383: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:24:52.719: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:24:52.768: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:25:07.559: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:25:07.671: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:26:53.635: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:26:53.687: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:27:08.649: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:29:39.710: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:29:39.763: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:09.844: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:15.043: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:15.098: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:40.219: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:40.411: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:45.381: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:30:45.426: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:31:10.722: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:31:45.774: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:31:45.831: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:32:11.210: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:32:46.020: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:32:46.063: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:33:06.202: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:33:06.243: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:33:11.651: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:33:41.923: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:34:06.597: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:34:06.639: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:34:42.427: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:35:17.118: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:35:17.159: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:36:18.585: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:36:18.648: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:36:43.261: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:37:13.423: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:37:13.460: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:37:43.772: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:37:58.204: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:37:58.252: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:38:23.323: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:38:23.375: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:38:44.279: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:38:44.362: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:40:40.319: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:40:40.356: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:41:15.535: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:42:23.170: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:42:23.220: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:42:46.508: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:42:46.550: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:10.459: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:10.505: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:16.440: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:45.485: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:45.538: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:46.703: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:47.005: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:43:47.054: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:44:17.091: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:44:42.553: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:44:42.594: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:44:45.777: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:44:45.811: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:45:17.580: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:45:17.674: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:46:23.692: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:46:23.749: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:46:48.324: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:47:18.591: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:55:43.944: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:55:43.981: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:57:29.947: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:57:29.986: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:57:52.761: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:58:53.181: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 13:58:54.349: %CBR-6-PKTCBL_GATE_ERROR: Pktcbl failure op. (8), type: [32778], gate id: [0], sub_id: [10.43.139.45]
+*Jul  7 14:01:54.422: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:04:43.959: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:04:44.014: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:04:55.656: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:19.238: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:19.277: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:34.352: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:34.382: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:54.572: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:54.619: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:56.097: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:05:56.201: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:06:04.543: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:06:04.613: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:06:26.480: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:06:26.572: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:09:05.768: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:09:05.817: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:09:27.853: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:10:16.255: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:10:16.311: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:10:52.283: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:10:52.320: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:10:58.531: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:11:28.807: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:11:41.930: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:11:41.970: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:12:29.343: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:12:47.393: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:12:47.439: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:12:59.845: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:14:04.001: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:14:04.040: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:14:30.667: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:16:06.110: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:16:06.171: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:16:31.586: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:17:00.682: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:17:00.727: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:17:32.117: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:17:51.142: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:17:51.180: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:18:02.422: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:18:32.735: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:18:42.267: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:18:42.325: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:19:03.021: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:20:09.571: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: evelazquez] [Source: 10.142.145.5] [localport: 22] at 08:20:09 EST Tue Jul 7 2020
+*Jul  7 14:24:45.076: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:24:45.115: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:25:05.453: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:26:36.070: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:26:36.108: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:27:36.809: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:27:36.849: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:28:06.769: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:30:43.445: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:30:43.489: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:31:08.154: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:33:05.222: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:33:05.262: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:33:39.228: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:40:55.927: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:40:55.984: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:40:59.222: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:40:59.265: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:41:42.357: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:41:42.463: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:42:12.743: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:42:41.783: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:42:41.837: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:43:40.978: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:43:41.015: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:44:13.666: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:45:37.020: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:45:37.061: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:47:02.919: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:47:02.965: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:47:15.029: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:50:50.067: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:50:50.096: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:51:16.718: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:52:17.164: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:03.757: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:03.787: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:23.884: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:23.919: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:48.178: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:59.346: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:54:59.380: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:09.406: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:09.436: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:18.448: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:29.518: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:29.549: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:47.858: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:47.895: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:48.666: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:55:48.702: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:56:18.986: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:05.056: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:05.078: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:13.712: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:13.752: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:19.453: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 14:57:49.729: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:00:40.611: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:00:40.659: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:01:21.248: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:01:51.538: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:02:11.461: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:02:11.501: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:03:30.047: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:03:30.151: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:03:52.459: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:04:58.351: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:04:58.374: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:05:23.120: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:05:38.634: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:05:38.679: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:03.792: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:03.846: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:23.653: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:23.724: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:43.917: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:43.953: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:06:53.987: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:07:24.277: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:09:05.069: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:09:05.091: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:09:47.511: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:09:47.574: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:09:55.437: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:10:25.771: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:11:01.360: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:11:01.399: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:11:53.242: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:11:53.303: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:12:03.488: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:12:03.549: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:12:26.638: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:12:26.728: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:13:18.817: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:13:18.868: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:28.240: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:28.281: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:34.253: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:34.297: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:50.316: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:50.428: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:57.851: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:14:57.935: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:28.254: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:28.344: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:34.647: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:34.686: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:44.859: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:44.937: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:15:58.679: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:16:29.540: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:16:29.579: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:16:59.190: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:17:59.721: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:18:30.618: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:18:30.664: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:19:00.249: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:14.987: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:15.039: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:22.225: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:22.272: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:31.379: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:37.298: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:21:37.356: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:22:01.690: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:22:01.787: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:23:38.009: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:23:38.049: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:24:02.643: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:24:11.281: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:24:11.328: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:24:32.968: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:25:46.889: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:25:46.947: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:25:51.877: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:25:51.908: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:26:03.625: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:26:25.164: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:26:25.239: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:26:33.897: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:00.493: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:00.532: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:04.178: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:29.653: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:29.712: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:27:34.449: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:28:04.764: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:28:04.841: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:28:36.361: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:28:36.408: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:29:05.374: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:29:35.726: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:08.714: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:08.756: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:36.244: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:47.700: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:47.739: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:59.034: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:30:59.078: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:31:06.535: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:32:54.833: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:32:54.888: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:33:07.388: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:33:37.740: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:33:49.252: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:33:49.286: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:34:20.425: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:34:20.484: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:34:38.264: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:35:10.142: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:35:10.233: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:35:38.739: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:38:03.940: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:38:03.993: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:08.813: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:08.884: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:32.599: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:32.640: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:34.525: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:34.588: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:37.542: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:37.570: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:39:40.447: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:40:10.728: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:40:10.805: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:40:10.839: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:40:48.325: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:40:48.365: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:42:53.513: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:42:53.557: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:45:26.789: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:45:26.847: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:45:43.009: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:46:02.128: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:46:02.183: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:46:13.344: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:00.635: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:00.680: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:13.851: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:35.861: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:35.918: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:55.987: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:47:56.016: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:48:07.571: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:48:07.621: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:48:14.299: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:48:14.382: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:48:44.679: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:49:38.561: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:49:38.621: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:49:45.177: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:50:03.666: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:50:03.700: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:50:15.534: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:50:45.814: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:51:24.356: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:51:24.410: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:51:46.349: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:52:59.952: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:53:00.001: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:53:47.188: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:54:08.477: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:54:08.518: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:54:40.756: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:54:40.814: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:54:47.673: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:55:17.950: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:56:57.579: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:56:57.616: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:57:24.856: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:57:24.898: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:57:49.028: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:58:19.345: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:59:34.859: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 15:59:34.892: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:00:10.900: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:00:10.940: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:00:20.231: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:04.924: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:04.954: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:20.763: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:35.237: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:35.306: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:01:51.080: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:03:17.207: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:03:17.265: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty1
+*Jul  7 16:03:23.363: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: oscsalga] [Source: 100.64.93.6] [localport: 22] at 10:03:23 EST Tue Jul 7 2020
+*Jul  7 16:03:26.183: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:03:26.228: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:03:51.983: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:03:52.092: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:04:22.367: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:05:12.905: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:05:12.961: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:05:53.028: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:06:32.493: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: oscsalga] [Source: 100.64.93.6] [localport: 22] at 10:06:32 EST Tue Jul 7 2020
+*Jul  7 16:07:50.397: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: oscsalga] [Source: 100.64.93.6] [localport: 22] at 10:07:50 EST Tue Jul 7 2020
+*Jul  7 16:08:56.422: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:08:56.482: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:09:24.502: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:11:55.606: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:11:55.661: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:12:25.783: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:13:37.022: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:13:37.068: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:13:40.728: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: KrSaldana] [Source: 100.64.93.1] [localport: 22] at 10:13:40 EST Tue Jul 7 2020
+*Jul  7 16:13:56.451: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:10.878: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:10.937: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:26.741: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:30.951: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:31.014: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:57.080: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:14:57.156: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:15:03.799: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:15:03.855: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:15:27.475: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:15:57.854: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:15:57.943: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:16:46.938: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:16:46.982: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:16:58.422: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:08.063: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:08.124: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:13.048: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:13.106: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:15.013: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:15.313: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:18:29.150: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:19:59.860: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:10.825: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:10.881: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:15.888: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:15.927: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:20.793: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:20.850: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:20:30.136: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:21:00.590: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:21:19.438: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:21:19.497: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:21:30.876: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:22:29.850: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:22:29.901: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:01.516: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:06.923: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:06.985: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:25.341: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:25.409: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:31.785: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:31.892: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:47.765: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:23:47.801: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:24:32.318: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:24:32.382: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:24:43.343: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:24:43.384: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:25:02.667: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:33.729: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:33.778: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:35.985: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:36.033: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:42.052: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:42.107: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:50.098: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:27:50.125: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:28:03.882: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty3
+*Jul  7 16:28:14.024: %SYS-6-TTY_EXPIRE_TIMER: (exec timer expired, tty 3 (100.64.93.1)), user KrSaldana
+*Jul  7 16:28:14.024: %SYS-6-LOGOUT: User KrSaldana has exited tty session 3(100.64.93.1)
+*Jul  7 16:28:32.396: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:32.453: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:34.152: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:39.186: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:39.247: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:42.437: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:28:42.497: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:04.518: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:04.608: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:04.702: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:37.845: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:37.891: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:41.048: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:29:41.093: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:30:05.180: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:30:05.315: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:30:35.658: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:31:33.662: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:31:33.707: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:05.589: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:05.650: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:06.334: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:36.646: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:44.078: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:44.115: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:44.124: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:32:44.153: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:33:06.966: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:33:07.008: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:33:07.104: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:33:58.519: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:33:58.571: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:03.504: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:03.566: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:06.341: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:06.405: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:08.657: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:08.706: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:37.803: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:37.909: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:34:37.998: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:35:08.329: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:37:40.020: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:37:40.084: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:38:09.624: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:39:12.749: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:39:12.809: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:39:37.017: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:39:37.072: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:40:08.888: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:40:08.945: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:41:53.001: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:41:53.044: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:42:11.305: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:43:42.013: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:44:42.416: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:46:06.211: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:46:06.267: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:47:13.497: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:47:51.288: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:47:51.328: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:48:14.016: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:48:54.797: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:48:54.852: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:49:14.949: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:49:15.015: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:49:37.794: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:49:37.850: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:49:44.721: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:00.239: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:00.333: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:15.042: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:15.164: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:36.530: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:50:36.586: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:51:15.739: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:51:25.747: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:51:25.792: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:51:46.047: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:51:46.128: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:17.329: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:17.382: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:44.073: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:44.134: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:46.598: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:49.057: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:52:49.116: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:53:16.931: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:53:29.367: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:53:29.430: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:54:17.435: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:55:17.944: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:10.569: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:10.628: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:24.000: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:24.051: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:48.648: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:48.740: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:56:48.841: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:57:26.782: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:57:26.817: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:57:36.140: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:57:36.198: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:58:11.472: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:58:11.533: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
+*Jul  7 16:58:19.505: %SYS-5-CONFIG_P: Configured programmatically by process RF Resiliency Proc from console as vty2
