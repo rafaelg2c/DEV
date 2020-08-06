@@ -22,7 +22,7 @@ data = xmltodict.parse(xml1.read())
 
 data2 = data["item"]["a:table"]["@xmlns:a"]
 data3 = json.dumps(data2)
-print(data3)
+print(data3),
 
 
 
