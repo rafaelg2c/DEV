@@ -23,7 +23,6 @@ for network in networks:
     if network["name"] == 'DevNet Sandbox ALWAYS ON':
         network_Id = network["id"]
         pprint(network_Id)
-"""
+
 vlans = meraki.vlans.get_network_vlans(network_Id)
 pprint(vlans)
-"""
