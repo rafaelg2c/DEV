@@ -21,8 +21,24 @@ networks = meraki.networks.get_organization_networks(params)
 
 for network in networks:
     if network["name"] == 'DevNet Sandbox ALWAYS ON':
-        network_Id = network["id"]
-        pprint(network_Id)
+        net_Id = network["id"]
+        pprint(net_Id)
 
-vlans = meraki.vlans.get_network_vlans(network_Id)
-pprint(vlans)
+vlans = meraki.vlans.get_network_vlans(net_Id)
+#pprint(vlans)
+
+vlan = vlans[0]
+vlan["name"] == "Python TEST-SDK"
+
+update_vlan = {}
+update_vlan["network_Id"] = net_Id
+update_vlan["vlan_Id"] = vlan["Id"]
+update_vlan["update_network_vlan"] = vlan
+
+result = meraki.vlans.update_network_vlan(update_vlan)
+
+result_vlan = meraki.vlans.update_network_vlan(net_Id)
+pprint(result_vlan)
+
+
+

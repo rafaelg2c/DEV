@@ -3,7 +3,7 @@ import requests
 import base_rest 
 import urllib3
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 equipo = base_rest.router
 username = base_rest.username
