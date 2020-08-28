@@ -10,13 +10,14 @@ equipos = ["red", "cmts", "router", "sw"]
 capa2 = "sw"
 cable = "red" 
 
+
 if capa2 and cable in equipos:
     print("Se tiene en bodega: " + capa2 + " y " + cable + ".\n")
 else:
-    print("realizar pedi")  
+    print("realizar pedido")  
     print("\n")
 
-
+  
 cosa = [ "aretes", "mesa", "silla"]
 cosas = "aretes"
 
@@ -37,9 +38,4 @@ print(hombre1 == 10)
 
 print("is hombre == 87")
 print(hombre2 >= 89)
-
-
-
-
-  
-
+ 

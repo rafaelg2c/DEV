@@ -1,4 +1,4 @@
-
+"""
 def name (name, age):
     #return "Tú nombre es" + name + " y tu edad es" + str(age)
     return "Tu nombre es {} y tu edad es {}".format(name, age)
@@ -12,7 +12,7 @@ print(name("oscar", 50))
 
 print(name("Rafa", 10))
 
-
+"""
 
 def suma (num1 , num2):
     return num1 + num2
@@ -20,6 +20,8 @@ def suma (num1 , num2):
 print(suma(23, 45)) # suma dos numeros y el resultado guardalo en un txt
 
 
+
+"""
 def absoluto (x):
     if x > 0:
         return x
@@ -42,4 +44,4 @@ def numeroMayorMenor (x , y):
         print("igual")
 
 print(numeroMayorMenor(9, 9))
- 
+ """
