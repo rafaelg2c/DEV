@@ -7,7 +7,7 @@ if "green" in alien_color:
     print("You are the second")
 """
 
-alien_color = "yellow"
+alien_color = "blue"
 point = 0
 
 if "blue" in alien_color:
