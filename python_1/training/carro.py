@@ -3,7 +3,7 @@
 def licencia(nombre, edad,  Nacionalidad, calificacion):
     print("nombre: " + nombre )
     print("edad: " + edad)
-    print("Nacionalidad: "  + Nacionalidad )
+    print("Nacionalidad: "  + Nacionalidad)
 
     if Nacionalidad == "Mex" and calificacion > 8:
         print("licencia: " + nombre + Nacionalidad +"12389" )
@@ -23,13 +23,12 @@ def Agencia(licencia):
         print("no continuar")
 
 licencia1 = licencia("Rafael","38","Mex", 10)
-Agencia(licencia1)
-
 licencia2 = licencia("Angel","50","usa", 5)
-Agencia(licencia2)
-
 licencia3 = licencia("hector","30","Bra", 9)
+
 Agencia(licencia1)
+Agencia(licencia2)
+Agencia(licencia3)
 
 
 
