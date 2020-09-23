@@ -25,19 +25,31 @@ netconf_filter = """
 """
 
 
+### Another way to connect ###  
+#m = manager.connect(host=equipo["host"], port=equipo["port"], username=equipo["username"], password=equipo["password"], hostkey_verify=False)
+##for capability in m.server_capabilities:
+#         print('*' *58)
+#         print(capability)
+
+    
 with manager.connect(host=equipo["host"], port=equipo["port"], username=equipo["username"], password=equipo["password"], hostkey_verify=False) as m:
-    for capability in m.server_capabilities:
-        print('*' *58)
-        print(capability)
+    ### To get the Capabilietes ###
+    # for capability in m.server_capabilities:
+    #     print('*' *58)
+    #     print(capability)
+
+    # #### GET DATA MODEL SCHEMA ####
+    # schema = m.get_schema('Cisco-IOS-XE-acl')
+    # print(schema)
+        
 
         interface_netconf = m.get(netconf_filter)
         xmldom = xml.dom.minidom.parseString(str(interface_netconf))
-        print(xmldom.toprettyxml(indent= "  "))
+        print(xmldom.toprettyxml(indent=''))
         print("*" *25 + "Break" + "*" *50)
 
 
-        interface_python = xmltodict.parse(interface_netconf.xml)[
-            "rpc-reply"]["data"]       
+        interface_python = xmltodict.parse(interface_netconf.xml)["rpc-reply"]["data"]       
         pprint(interface_python)
         name = interface_python["interfaces"]["interface"]["name"]["#text"]  
         print(name)
@@ -51,6 +63,7 @@ with manager.connect(host=equipo["host"], port=equipo["port"], username=equipo["
         print("Name:" + config['name']["#text"])
         print("description:" + config["description"])
         print("Packets In:" + op_state["statistics"]["in-unicast-pkts"])
-        m.close_session()
+
+m.close_session()
 
 
