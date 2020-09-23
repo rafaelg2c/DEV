@@ -11,16 +11,18 @@ for odd in rango:
     if odd % 2 != 0:
         print(odd)
 """
-"""
+
+
 list = [value*3 for value in range(1,11)]
 print(list)
-"""
 
+
+"""
 list = []
-for numero in range(1,11):
+for numero in range(0,11):
     list.append(numero*3)
 print(list)
-
+"""
 
 
 

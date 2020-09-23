@@ -1,0 +1,216 @@
+{
+  "response": [
+    {
+      "scoreDetail": [
+        {
+          "clientCount": 82,
+          "clientUniqueCount": 82,
+          "endtime": 1598586780000,
+          "scoreCategory": {
+            "scoreCategory": "CLIENT_TYPE",
+            "value": "ALL"
+          },
+          "scoreValue": 29,
+          "starttime": 1598586480000
+        },
+        {
+          "clientCount": 2,
+          "clientUniqueCount": 2,
+          "endtime": 1598586780000,
+          "scoreCategory": {
+            "scoreCategory": "CLIENT_TYPE",
+            "value": "WIRED"
+          },
+          "scoreList": [
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "POOR"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "FAIR"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 2,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "GOOD"
+              },
+              "scoreList": [
+                {
+                  "clientCount": 2,
+                  "clientUniqueCount": null,
+                  "endtime": 1598586780000,
+                  "scoreCategory": {
+                    "scoreCategory": "deviceType",
+                    "value": "ALL"
+                  },
+                  "scoreValue": -1,
+                  "starttime": 1598586480000
+                }
+              ],
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "IDLE"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "NODATA"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "NEW"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            }
+          ],
+          "scoreValue": 100,
+          "starttime": 1598586480000
+        },
+        {
+          "clientCount": 80,
+          "clientUniqueCount": 80,
+          "endtime": 1598586780000,
+          "scoreCategory": {
+            "scoreCategory": "CLIENT_TYPE",
+            "value": "WIRELESS"
+          },
+          "scoreList": [
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "POOR"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 58,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "FAIR"
+              },
+              "scoreList": [
+                {
+                  "clientCount": 58,
+                  "clientUniqueCount": null,
+                  "endtime": 1598586780000,
+                  "scoreCategory": {
+                    "scoreCategory": "deviceType",
+                    "value": "ALL"
+                  },
+                  "scoreValue": -1,
+                  "starttime": 1598586480000
+                }
+              ],
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 22,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "GOOD"
+              },
+              "scoreList": [
+                {
+                  "clientCount": 22,
+                  "clientUniqueCount": null,
+                  "endtime": 1598586780000,
+                  "scoreCategory": {
+                    "scoreCategory": "deviceType",
+                    "value": "ALL"
+                  },
+                  "scoreValue": -1,
+                  "starttime": 1598586480000
+                }
+              ],
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "IDLE"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "endtime": 1598586780000,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "NODATA"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            },
+            {
+              "clientCount": 0,
+              "clientUniqueCount": 0,
+              "scoreCategory": {
+                "scoreCategory": "SCORE_TYPE",
+                "value": "NEW"
+              },
+              "scoreValue": -1,
+              "starttime": 1598586480000
+            }
+          ],
+          "scoreValue": 28,
+          "starttime": 1598586480000
+        }
+      ],
+      "siteId": "global"
+    }
+  ]
+}
