@@ -46,8 +46,8 @@ Delete - delete
 503 service unavailable.
 
 header 
-content type specify the format ot the data in the body  ej application/json
-accept specify the requested format for return the data  ej application/json
+content type specify the format ot the data in the body  ej application/jason
+accept specify the requested format for return the data  ej application/jason
 Authorization
 date
 in request ans response
@@ -152,6 +152,9 @@ insieme= ins
 not a rest API
 
 https://{{host}}:{{port}}/ins
+
+"Content-type": "application/json" para configurar + cli_conf
+para show "Content-type": "application/json-rpc" + cli_show
 ++++++++++++++++++++++++++++++++++++
 
 NX-API-REST
@@ -248,5 +251,37 @@ x-auth-token
 **AUTH
 x-auth-token-postman
 APIC-cookie- python
+
+++++
+ACI TOOLKIT
+
+*****************************DNA Center Capabilities**************************
+
+Cisco Digital Network Architecture (DNA)
+
+https://sandboxdnac.cisco.com
+devnetuser/Cisco123!
+
+https://sandboxdnac2.cisco.com with platform 
+dnacdev/D3v93T@wK!
+
+
+
+DNA CENTER(imagen)
+
+-Appplication - Apis 
+-Design
+-Policy
+-Provision
+-assurence
+
+
+POSTMAN
+HEADERS
+content-type application/json
+Authorization Basic YWRtaW46R3JhcGV2aW5lMQ==
+x-auth-token(python)
+
+
 
 
