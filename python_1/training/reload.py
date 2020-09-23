@@ -1,7 +1,7 @@
 import rds_base as archivo_base
 
 username = "rafaelg2"
-password = "7Vn9c15c0.."
+password = "7Vn9c15c0."
 ip = "172.18.120.132"
 tiempo = 2
 listaComandos = ["show platf | in CPU | ex RP | u cut -d ' ' -f1"]
